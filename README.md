@@ -1,6 +1,6 @@
 # 🎵 CR Music Bot
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/kingali371/musicsy)
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 A Powerful Telegram Music Player Bot written in Python with Pyrogram and Py-Tgcalls.
@@ -59,7 +59,7 @@ A Powerful Telegram Music Player Bot written in Python with Pyrogram and Py-Tgca
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/musicsy.git
+git clone https://github.com/kingali371/musicsy.git
 cd musicsy
 
 # Install dependencies
