@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: cr-d-music
+    name: musicsy
     runtime: image
     repo: https://github.com/kingali371/musicsy
     plan: free
@@ -9,27 +9,31 @@ services:
     envVars:
       - key: API_ID
         description: "Get this value from https://my.telegram.org/apps"
+        required: true
         sync: false
       - key: API_HASH
         description: "Get this value from https://my.telegram.org/apps"
+        required: true
         sync: false
       - key: BOT_TOKEN
         description: "Your bot token from @BotFather"
+        required: true
         sync: false
       - key: MONGO_DB_URI
-        description: "MongoDB connection URI"
-        value: mongodb+srv://zzboss:zzboss@cluster0.heabj.mongodb.net/vambir_bot?retryWrites=true&w=majority
-      - key: MUSIC_BOT_NAME
-        description: "Name of your music bot"
-        value: "cr ダ ᴍᴜsɪᴄ"
+        description: "MongoDB connection URI (required for database)"
+        required: true
+        value: "mongodb+srv://zzboss:zzboss@cluster0.heabj.mongodb.net/vambir_bot?retryWrites=true&w=majority"
       - key: OWNER_ID
         description: "Your Telegram user ID"
+        required: true
         sync: false
       - key: STRING_SESSION
         description: "Pyrogram string session for assistant account"
+        required: true
         sync: false
       - key: LOG_GROUP_ID
         description: "Group ID for bot logs (bot must be admin)"
+        required: true
         sync: false
       - key: PORT
         value: 10000
