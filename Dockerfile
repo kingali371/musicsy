@@ -13,6 +13,7 @@ RUN apt-get update && apt-get upgrade -y \
     git \
     curl \
     wget \
+    neofetch \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
