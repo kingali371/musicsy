@@ -71,3 +71,27 @@ cp .env.example .env
 
 # Run the bot
 python3 main.py
+
+
+
+
+## 📋 المتغيرات المطلوبة (Required)
+
+| Variable | Description | Required |
+|----------|-------------|----------|
+| `API_ID` | Get from [my.telegram.org](https://my.telegram.org) | ✅ **مطلوب** |
+| `API_HASH` | Get from [my.telegram.org](https://my.telegram.org) | ✅ **مطلوب** |
+| `BOT_TOKEN` | Get from [@BotFather](https://t.me/BotFather) | ✅ **مطلوب** |
+| `STRING_SESSION` | Pyrogram string session | ✅ **مطلوب** |
+| `OWNER_ID` | Your Telegram user ID | ✅ **مطلوب** |
+| `LOG_GROUP_ID` | Group ID for logs | ✅ **مطلوب** |
+
+## 📝 المتغيرات الاختيارية (Optional)
+
+| Variable | Description | Default Value |
+|----------|-------------|---------------|
+| `MONGO_DB_URI` | MongoDB connection URI | `None` (بدون قاعدة بيانات) |
+| `MUSIC_BOT_NAME` | Name of your bot | `CR Music Bot` |
+| `PORT` | Web server port | `10000` |
+
+> **ملاحظة:** المتغيرات الاختيارية يمكن تركها فارغة، وسيعمل البوت بشكل طبيعي.
