@@ -14,8 +14,8 @@ A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/cr-d-music.git
-cd cr-d-music
+git clone https://github.com/kingali371/musicsy.git
+cd musicsy
 
 # Install dependencies
 pip install -r requirements.txt
