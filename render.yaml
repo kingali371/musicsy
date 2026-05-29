@@ -20,9 +20,13 @@ services:
         required: true
         sync: false
       - key: MONGO_DB_URI
-        description: "MongoDB connection URI (required for database)"
-        required: true
-        value: "mongodb+srv://zzboss:zzboss@cluster0.heabj.mongodb.net/vambir_bot?retryWrites=true&w=majority"
+        description: "MongoDB connection URI (optional)"
+        required: false
+        value: ""
+      - key: MUSIC_BOT_NAME
+        description: "A name for your Music Bot (optional, can use special characters)"
+        required: false
+        value: "cr ダ ᴍᴜsɪᴄ"
       - key: OWNER_ID
         description: "Your Telegram user ID"
         required: true
