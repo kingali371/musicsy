@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: cr-d-music
+    runtime: python
+    plan: free
+    buildCommand: chmod +x .render-build.sh && ./.render-build.sh
+    startCommand: python3 main.py
+    envVars:
+      - key: API_ID
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: BOT_TOKEN
+        sync: false
+      - key: MONGO_DB_URI
+        value: mongodb+srv://zzboss:zzboss@cluster0.heabj.mongodb.net/vambir_bot?retryWrites=true&w=majority
+      - key: MUSIC_BOT_NAME
+        value: cr ダ ᴍᴜsɪᴄ
+      - key: OWNER_ID
+        sync: false
+      - key: STRING_SESSION
+        sync: false
+      - key: LOG_GROUP_ID
+        sync: false
+      - key: PORT
+        value: 10000
+    healthCheckPath: /
+    autoDeploy: true
