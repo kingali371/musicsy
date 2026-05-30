@@ -111,7 +111,7 @@ async def handle_messages(client: Client, message: Message):
             f"🎶 أرسل رابط يوتيوب لتشغيل الموسيقى\n"
             f"📝 استخدم /help للمساعدة",
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("📢 Channel", url="https://t.me/yourchannel")],
+                [InlineKeyboardButton("📢 Channel", url="https://t.me/def_Zoka")],
                 [InlineKeyboardButton("👨‍💻 Developer", url="https://t.me/youraccount")]
             ])
         )
